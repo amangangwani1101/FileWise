@@ -1,0 +1,27 @@
+Feature 				Time Complexity     		Space Complexity
+
+classify_file				O(n) => no of file		O(n) => no of file 
+
+
+search file 				2*O(m*n)  			O(m)
+					m = no of classification 
+					n = no of file inside file_type
+
+
+large file 				O(1)				O(n) => no of large file
+
+delete_file_type			2*(O(m)) 			O(1)
+					m = no of classification
+
+delete_name				O(m*n) + O(k)			O(k)
+					k = no of same file
+
+duplicate
+    --> delete dolder			O(1) 				O(1)
+
+    --> compress 			O(m*n)				O(m*n)
+
+add file 				O(m*n)				O(1)
+
+infrequently accessed files		O(n)				O(k)
+									k = no files which are not accessed upto threshold		
